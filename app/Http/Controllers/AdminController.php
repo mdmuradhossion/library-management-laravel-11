@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Author;
+use App\Models\Book;
+use App\Models\Category;
+use App\Models\Issuedbook;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -16,8 +20,14 @@ class AdminController extends Controller
      */
     public function index()
     {
-//        print 'ok';
-        return view('admin.dashboard');
+        $books = Book::count();
+        $issuedbook = Issuedbook::count();
+        $issuedbookReturn = Issuedbook::where('retrunStatus','1')->count();
+        $user = User::where('userType','user')->count();
+        $authors = Author::count();
+        $categories = Category::count();
+
+        return view('admin.dashboard',compact('books','issuedbook','issuedbookReturn','user','authors','categories'));
     }
 
     /**

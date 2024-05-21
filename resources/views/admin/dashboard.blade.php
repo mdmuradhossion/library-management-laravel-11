@@ -11,7 +11,7 @@
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="alert alert-success back-widget-set text-center">
                     <i class="fa fa-book fa-5x"></i>
-                    <h3>2</h3>
+                    <h3>{{$books}}</h3>
                     Books Listed
                 </div>
             </div>
@@ -19,21 +19,21 @@
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="alert alert-info back-widget-set text-center">
                     <i class="fa fa-bars fa-5x"></i>
-                    <h3>2 </h3>
+                    <h3>{{$issuedbook}}</h3>
                     Times Book Issued
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="alert alert-warning back-widget-set text-center">
                     <i class="fa fa-recycle fa-5x"></i>
-                    <h3>3</h3>
+                    <h3>{{$issuedbookReturn}}</h3>
                     Times  Books Returned
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="alert alert-danger back-widget-set text-center">
                     <i class="fa fa-users fa-5x"></i>
-                    <h3>3</h3>
+                    <h3>{{$user}}</h3>
                     Registered Users
                 </div>
             </div>
@@ -43,7 +43,7 @@
             <div class="col-md-3 col-sm-3 col-xs-6">
                 <div class="alert alert-success back-widget-set text-center">
                     <i class="fa fa-user fa-5x"></i>
-                    <h3>4</h3>
+                    <h3>{{$authors}}</h3>
                     Authors Listed
                 </div>
             </div>
@@ -51,7 +51,7 @@
             <div class="col-md-3 col-sm-3 rscol-xs-6">
                 <div class="alert alert-info back-widget-set text-center">
                     <i class="fa fa-file-archive-o fa-5x"></i>
-                    <h3>5 </h3>
+                    <h3>{{$categories}}</h3>
                     Listed Categories
                 </div>
             </div>
